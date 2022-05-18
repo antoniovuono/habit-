@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct SplashView: View {
-    @State var state: SplashUIState = .loading
+
+    @ObservedObject var viewModel: SplashViewModel
     
     var body: some View {
-        switch state {
-        case .loading:
-             loadingView()
-        case .goToSignInScreen:
-             Text("Carregar a tela de login ")
-        case .goToHomeScreen:
-             Text("Carregar a homepage")
-        case .error(let msg):
-            loadingView(error: msg)
-        }
+        Group {
+            switch viewModel.uiState {
+            case .loading:
+                 loadingView()
+            case .goToSignInScreen:
+                 Text("Carregar a tela de login ")
+            case .goToHomeScreen:
+                 Text("Carregar a homepage")
+            case .error(let msg):
+                loadingView(error: msg)
+            }
+        }.onAppear(perform: viewModel.onApear)
     }
 }
 
@@ -50,7 +53,7 @@ extension SplashView {
 
 struct SplashView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashView(state: .error("Não foi possível conectar ao servidor!"))
-//        SplashView()
+        let viewModel = SplashViewModel()
+        SplashView(viewModel: viewModel)
     }
 }

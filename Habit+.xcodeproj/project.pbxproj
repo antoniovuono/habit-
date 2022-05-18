@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7541293283509EE0050D7E8 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7541292283509EE0050D7E8 /* SplashViewModel.swift */; };
 		E77EF79F283466FB008F1204 /* Habit_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EF78F283466FA008F1204 /* Habit_App.swift */; };
 		E77EF7A0283466FB008F1204 /* Habit_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EF78F283466FA008F1204 /* Habit_App.swift */; };
 		E77EF7A3283466FB008F1204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77EF791283466FB008F1204 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7541292283509EE0050D7E8 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		E77EF78F283466FA008F1204 /* Habit_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit_App.swift; sourceTree = "<group>"; };
 		E77EF791283466FB008F1204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E77EF796283466FB008F1204 /* Habit+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7541291283509BD0050D7E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7541292283509EE0050D7E8 /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E77EF789283466FA008F1204 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		E77EF7AD28346796008F1204 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				E7541291283509BD0050D7E8 /* ViewModel */,
 				E77EF7AF283467B3008F1204 /* Model */,
 				E77EF7AE283467AB008F1204 /* View */,
 			);
@@ -205,6 +216,7 @@
 				E77EF7B4283468F4008F1204 /* SplashUIState.swift in Sources */,
 				E77EF79F283466FB008F1204 /* Habit_App.swift in Sources */,
 				E77EF7B228346801008F1204 /* SplashView.swift in Sources */,
+				E7541293283509EE0050D7E8 /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
