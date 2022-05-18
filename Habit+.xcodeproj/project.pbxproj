@@ -14,6 +14,9 @@
 		E77EF7A4283466FB008F1204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77EF791283466FB008F1204 /* Assets.xcassets */; };
 		E77EF7B228346801008F1204 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EF7B128346801008F1204 /* SplashView.swift */; };
 		E77EF7B4283468F4008F1204 /* SplashUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EF7B3283468F4008F1204 /* SplashUIState.swift */; };
+		E7AF60D228356D33008FA495 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AF60D128356D33008FA495 /* SignInView.swift */; };
+		E7AF60D428356DA0008FA495 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AF60D328356DA0008FA495 /* SignInViewModel.swift */; };
+		E7AF60D628356E94008FA495 /* SplashViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AF60D528356E94008FA495 /* SplashViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		E77EF79E283466FB008F1204 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		E77EF7B128346801008F1204 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E77EF7B3283468F4008F1204 /* SplashUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUIState.swift; sourceTree = "<group>"; };
+		E7AF60D128356D33008FA495 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		E7AF60D328356DA0008FA495 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		E7AF60D528356E94008FA495 /* SplashViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				E7541292283509EE0050D7E8 /* SplashViewModel.swift */,
+				E7AF60D528356E94008FA495 /* SplashViewRouter.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -65,6 +72,7 @@
 		E77EF78E283466FA008F1204 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E7AF60CD28356CCE008FA495 /* SignIn */,
 				E77EF7AD28346796008F1204 /* Splash */,
 				E77EF78F283466FA008F1204 /* Habit_App.swift */,
 				E77EF791283466FB008F1204 /* Assets.xcassets */,
@@ -113,6 +121,39 @@
 				E77EF7B3283468F4008F1204 /* SplashUIState.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E7AF60CD28356CCE008FA495 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				E7AF60D028356CE9008FA495 /* View */,
+				E7AF60CE28356CD5008FA495 /* ViewModel */,
+				E7AF60CF28356CE3008FA495 /* Model */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		E7AF60CE28356CD5008FA495 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7AF60D328356DA0008FA495 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E7AF60CF28356CE3008FA495 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E7AF60D028356CE9008FA495 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7AF60D128356D33008FA495 /* SignInView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +256,11 @@
 			files = (
 				E77EF7B4283468F4008F1204 /* SplashUIState.swift in Sources */,
 				E77EF79F283466FB008F1204 /* Habit_App.swift in Sources */,
+				E7AF60D428356DA0008FA495 /* SignInViewModel.swift in Sources */,
 				E77EF7B228346801008F1204 /* SplashView.swift in Sources */,
 				E7541293283509EE0050D7E8 /* SplashViewModel.swift in Sources */,
+				E7AF60D628356E94008FA495 /* SplashViewRouter.swift in Sources */,
+				E7AF60D228356D33008FA495 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
